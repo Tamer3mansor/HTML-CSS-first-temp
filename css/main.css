@@ -1,0 +1,528 @@
+/*****************************Main Config***************************/
+:root {
+    --right: 100px;
+    --left: 100px;
+}
+html
+{
+    background-color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height: 100%;
+}
+.container
+{
+margin-left: var(--left);
+margin-right: var(--right);
+}
+/*********************************************main section tip>>middle>>bottom*************************************************/
+.top
+{
+    margin: 0px;
+    color: white;
+    width: auto;
+    height: 110%;
+    background-image: url(../img/upper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle
+{
+   /* margin-left:var(--left);
+    margin-right: var(--right);*/
+    color: white;
+    height: 70%;
+    background-color:#01081b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    display: grid;
+}
+.bottom
+{
+/*margin-left:var(--left);
+    margin-right: var(--right);*/
+    width: 100%;
+    color: white;
+    height:110%;
+    background-image: url(../img/lower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    display: grid;
+}
+
+/******************************************************start head**************************************************************/
+span i{
+    font-size:large;
+    position: relative;
+    top:50px;
+    left:-50px;
+    
+}
+.header
+{
+    margin-top: 20px;;
+}
+.topic
+{
+ margin-top: 0vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.topic i
+{
+ font-size: medium;
+ color: aquamarine;
+}
+
+.topic p
+,
+.topic i
+{
+    margin-top: 20px;
+    
+}
+.topic p:hover
+{
+    cursor: pointer;
+color:cadetblue;
+        font-size: larger;
+}
+.topic i:hover
+{
+    cursor: pointer;
+        font-size: large;
+
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+  }
+      25%{
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+}
+50%
+{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+      75%
+      {
+          transform: rotate(-90deg);
+          -webkit-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+}
+100%
+      {
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+}
+
+}
+.header .container span i
+{
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state:paused ;
+
+
+}
+.header .container i:hover
+{
+    animation-play-state:running ;
+}
+p 
+{
+    font-style: oblique;
+    font-size: medium;
+    margin-top: 2vh;
+    padding: 0;
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}
+/*********************************spcail head***********************************************/
+.specail
+{
+    display: none;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width:fit-content;
+    margin-left: 10px;
+    top:-50px;
+}
+li , ul
+{
+    
+padding: 0px;
+margin: 0px;
+}
+.specail ul
+{
+    list-style: none;
+    white-space: pre-line;
+    z-index: 1;
+    display: none;
+}
+.specail:hover ul
+{
+    display: block;
+   
+}
+li:hover
+{
+    cursor: pointer;
+    color:cadetblue;
+            font-size: larger;
+}
+
+/*@media screen and (max-width: 768px) 
+{
+    .container {
+        width: calc(750px - 200px);
+      }
+.container .topic p
+{
+   display: none;
+}
+
+.specail
+{
+    display: block;
+}
+
+.specail .lis i 
+{
+    font-size: medium;
+    position:relative;
+    
+}
+li , ul
+{
+    
+padding: 0px;
+margin: 0px;
+}
+}*/
+
+/***************************************************End Speacil Head**********************************************/
+/********************************************************end head***************************************************/              
+/******************************************************start body**************************************************/
+.bod
+{
+    display: grid;
+    align-items: end;
+    justify-items: end;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 50%;
+}
+
+.container .text 
+{
+    position: relative;
+    top: -145px;
+    display: grid;
+    grid-template-rows: repeat(3,minmax(10px,auto));
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder; 
+}
+.bod .container input
+{
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.bod .container input:hover
+{
+    color: darkgoldenrod;
+}
+/*end body*/
+/*Start main config for top*/
+
+
+/**************************End Main config*****************************/
+/***************************Start Middle*************************************/
+p 
+{
+    margin-top: 10px;
+}
+
+.icon 
+{
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, 186px);
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+
+}
+.icon i
+{
+    font-size: 100px;
+    margin: 10px 0 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+.icon i:hover
+{
+    font-size: 105px;
+
+}
+.middle .tex
+{
+color: #07045f;
+font-size: larger;
+} 
+.middle h5
+{
+    color: #07045f;
+}
+
+/***********************************end middle***********************************/
+/************************************contact us*********************************
+.contactus a
+{
+    top:10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contactus i
+{
+    font-size: x-large;
+}
+.bottom .container .contactus {
+    position: fixed;
+    left: calc(100% - 77px);
+    top: 111px;
+}
+/***************************end contact us**************************************/
+/********************start bottom**********************************/
+.bottom .container .tt
+{
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(10px,auto));
+
+    
+}
+.bottom .container h3
+{
+
+    font-style: italic;
+}
+
+/********************************************start cards*******************************************/
+
+.card , .tsk ,.tsk1 , .tsk2{
+
+    perspective: 150rem;
+    position: relative;
+    top:50%;
+    max-height: 20px;
+    max-width: 40px;
+  }
+  /*.tsk
+  {
+      position: relative;
+      left: 150px;
+  }
+  .tsk1
+  {
+    position: relative;
+    left: 400px;
+  }
+  .tsk2
+  {
+    position: relative;
+    left: 80px; 
+    
+  }*/
+  .card-side
+  ,
+  .tsk-side
+  ,
+  .tsk1-side
+  ,
+  .tsk2-side
+   {
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 80%;*/
+    padding:2rem;
+    color: white
+  }
+  
+  .card-side.back 
+  ,
+  .tsk-side.back
+  ,
+  .tsk1-side.back
+  ,
+  .tsk2-side.back
+  {
+    transform: rotateY(-180deg);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  }
+  
+  .card-side.front 
+  ,
+  .tsk-side.front 
+  ,
+  .tsk1-side.front
+  ,
+  .tsk2-side.front
+  {
+   border: 2px solid black;
+  }
+  
+  .card:hover .card-side.front 
+  ,
+  .tsk:hover .tsk-side.front
+  ,
+  .tsk1:hover .tsk1-side.front
+  ,
+  .tsk2:hover .tsk2-side.front
+  {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-side.back 
+  ,
+  .tsk:hover .tsk-side.back
+  ,
+  .tsk1:hover .tsk1-side.back
+  ,
+  .tsk2:hover .tsk2-side.back
+  {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+.information
+{
+    position: relative;
+    top:10%;
+}
+.info
+{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ 
+/********************************************end cards********************************************/
+/*@media screen and (max-width: 1172px) 
+{
+    .container {
+        width: calc(750px - 300px);
+  
+}
+.icon
+{
+    display: grid;
+grid-gap: 10px;
+}
+
+.icon i 
+{
+    font-size: large;
+}
+
+}*//*
+@media screen and (max-width: 768px) 
+{
+    .container {
+        width: calc(750px - 300px);
+  
+}
+.icon
+{
+    display: grid;
+grid-gap: 10px;
+}
+
+.icon i 
+{
+    font-size: large;
+}
+
+}
+
+.middle 
+{
+    height: 110%;
+}
+
+}*/
+/* @media screen and (max-width: 1000px) 
+{
+.container
+{
+    width: 900px;
+}
+.middle 
+{
+    height: 90%;
+}
+
+}*/
+
+.tsk2
+{
+    position: fixed;
+    left:calc(100% - 110px);
+    top:100px;
+}
+.tsk2 i:hover
+{
+    font-size: xx-large;
+}
