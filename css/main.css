@@ -5,6 +5,7 @@
 }
 html
 {
+    
     background-color: #000000;
     height: 100%;
     margin: 0;
@@ -33,8 +34,7 @@ margin-right: var(--right);
 
 .middle
 {
-   /* margin-left:var(--left);
-    margin-right: var(--right);*/
+   
     color: white;
     height: 70%;
     background-color:#01081b;
@@ -45,8 +45,7 @@ margin-right: var(--right);
 }
 .bottom
 {
-/*margin-left:var(--left);
-    margin-right: var(--right);*/
+
     width: 100%;
     color: white;
     height:110%;
@@ -61,7 +60,7 @@ margin-right: var(--right);
 span i{
     font-size:large;
     position: relative;
-    top:50px;
+    top:40px;
     left:-50px;
     
 }
@@ -204,34 +203,7 @@ li:hover
             font-size: larger;
 }
 
-/*@media screen and (max-width: 768px) 
-{
-    .container {
-        width: calc(750px - 200px);
-      }
-.container .topic p
-{
-   display: none;
-}
 
-.specail
-{
-    display: block;
-}
-
-.specail .lis i 
-{
-    font-size: medium;
-    position:relative;
-    
-}
-li , ul
-{
-    
-padding: 0px;
-margin: 0px;
-}
-}*/
 
 /***************************************************End Speacil Head**********************************************/
 /********************************************************end head***************************************************/              
@@ -274,10 +246,7 @@ margin: 0px;
     color: darkgoldenrod;
 }
 /*end body*/
-/*Start main config for top*/
 
-
-/**************************End Main config*****************************/
 /***************************Start Middle*************************************/
 p 
 {
@@ -305,7 +274,7 @@ p
 }
 .icon i:hover
 {
-    font-size: 105px;
+    font-size: 109px;
 
 }
 .middle .tex
@@ -319,23 +288,18 @@ font-size: larger;
 }
 
 /***********************************end middle***********************************/
-/************************************contact us*********************************
-.contactus a
+/************************************contact us*********************************/
+.tsk2
 {
-    top:10px;
-    display: block;
-    margin-bottom: 10px;
+    position: fixed;
+    left:calc(100% - 110px);
+    top:100px;
+}
+.tsk2 i:hover
+{
+    font-size: xx-large;
 }
 
-.contactus i
-{
-    font-size: x-large;
-}
-.bottom .container .contactus {
-    position: fixed;
-    left: calc(100% - 77px);
-    top: 111px;
-}
 /***************************end contact us**************************************/
 /********************start bottom**********************************/
 .bottom .container .tt
@@ -363,22 +327,7 @@ font-size: larger;
     max-height: 20px;
     max-width: 40px;
   }
-  /*.tsk
-  {
-      position: relative;
-      left: 150px;
-  }
-  .tsk1
-  {
-    position: relative;
-    left: 400px;
-  }
-  .tsk2
-  {
-    position: relative;
-    left: 80px; 
-    
-  }*/
+
   .card-side
   ,
   .tsk-side
@@ -454,12 +403,140 @@ font-size: larger;
 }
 .info
 {
-    display: flex;
-    justify-content: space-evenly;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+  
 
 }
  
+
 /********************************************end cards********************************************/
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops >> done 
+1025px — 1200px: Desktops, large screens >>true
+1201px and more —  Extra large screens, TV  >>>true
+
+*/
+
+@media screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1024px) 
+   { 
+       .container
+       {
+           width: 550px ;
+       }
+       .info
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 200px;
+    margin-top: 100px;
+  
+
+}
+       
+}
+
+@media screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 767px) 
+   { 
+       .container
+       {
+           width: 300px ;
+       }
+       .info
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 200px;
+    margin-top: 100px;
+  
+
+}
+       
+}
+
+@media screen 
+  and (min-device-width: 319px) 
+  and (max-device-width: 479px) 
+   { 
+       .container
+       {
+           width: 100px ;
+       }
+       .info
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 200px;
+    margin-top: 100px;
+  
+
+}
+
+.container .topic p
+{
+   display: none;
+}
+
+.specail
+{
+    display: block;
+}
+
+.specail .lis i 
+{
+    font-size: medium;
+    position:relative;
+    
+}
+li , ul
+{
+    
+padding: 0px;
+margin: 0px;
+}
+.icon i
+{
+    font-size: 50px;
+    margin: 10px 0 10px 0;
+    align-items: center;
+    justify-content: center;
+}  
+.card , .tsk ,.tsk1 , .tsk2{
+
+    perspective: 150rem;
+    position: relative;
+    top:50%;
+    max-height: 10px;
+    max-width: 10px;
+  }
+  .bottom
+  {
+      height: 130%;
+  }
+  .tsk2
+{
+    position: relative;
+    left: calc(100% - 189px);
+    top: 464px;
+}
+.tsk2 i:hover
+{
+    font-size: xx-large;
+}
+
+}
 /*@media screen and (max-width: 1172px) 
 {
     .container {
@@ -516,13 +593,33 @@ grid-gap: 10px;
 
 }*/
 
-.tsk2
+
+/*@media screen and (max-width: 768px) 
 {
-    position: fixed;
-    left:calc(100% - 110px);
-    top:100px;
-}
-.tsk2 i:hover
+    .container {
+        width: calc(750px - 200px);
+      }
+
+.container .topic p
 {
-    font-size: xx-large;
+   display: none;
 }
+
+.specail
+{
+    display: block;
+}
+
+.specail .lis i 
+{
+    font-size: medium;
+    position:relative;
+    
+}
+li , ul
+{
+    
+padding: 0px;
+margin: 0px;
+}
+}*/
