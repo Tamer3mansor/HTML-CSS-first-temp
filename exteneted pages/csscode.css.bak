@@ -1,0 +1,45 @@
+body
+{background-color: black;
+}
+.div1
+{
+	color:blue;
+	border-width:5px;
+	border-color:yellow;
+	border-style: solid;
+	margin: 50px 400px  auto ;
+	padding: 50px 50px ;
+	border-radius:50px;
+
+}
+h1,form
+{
+color:white;	
+}
+.imge
+{
+	border-width:1px  ;
+	margin: 5px 700px 50px     ;
+	border-color:black;
+	border-style: solid;
+	padding: 1px 1px ;
+
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}

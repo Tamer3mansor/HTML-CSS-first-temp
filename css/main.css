@@ -36,7 +36,7 @@ margin-right: var(--right);
 {
    
     color: white;
-    height: 70%;
+    min-height: fit-content;
     background-color:#01081b;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,14 +108,14 @@ color:cadetblue;
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
   }
-      25%{
+      33%{
           transform: rotate(90deg);
           -webkit-transform: rotate(90deg);
           -moz-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
           -o-transform: rotate(90deg);
 }
-50%
+66%
 {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -123,7 +123,15 @@ color:cadetblue;
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
 }
-      75%
+99%
+{
+    transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+      /*75%
       {
           transform: rotate(-90deg);
           -webkit-transform: rotate(-90deg);
@@ -133,27 +141,27 @@ color:cadetblue;
 }
 100%
       {
-          transform: rotate(-45deg);
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-}
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+}*/
 
 }
 .header .container span i
 {
     animation-name: spin;
     animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-play-state:paused ;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-play-state:running ;
 
 
 }
 .header .container i:hover
 {
-    animation-play-state:running ;
+    animation-iteration-count: infinite;
 }
 p 
 {
@@ -277,9 +285,13 @@ p
     font-size: 109px;
 
 }
+.middle .icon h5:hover 
+{
+    font-size: large;
+}
 .middle .tex
 {
-color: #07045f;
+color:#ffffff;
 font-size: larger;
 } 
 .middle h5
@@ -288,19 +300,7 @@ font-size: larger;
 }
 
 /***********************************end middle***********************************/
-/************************************contact us*********************************/
-.tsk2
-{
-    position: fixed;
-    left:calc(100% - 110px);
-    top:100px;
-}
-.tsk2 i:hover
-{
-    font-size: xx-large;
-}
 
-/***************************end contact us**************************************/
 /********************start bottom**********************************/
 .bottom .container .tt
 {
@@ -448,11 +448,11 @@ font-size: larger;
   and (min-device-width: 480px) 
   and (max-device-width: 767px) 
    { 
-       .container
+.container
        {
            width: 300px ;
        }
-       .info
+.info
 {
     position: relative;
     display: grid;
@@ -537,89 +537,16 @@ margin: 0px;
 }
 
 }
-/*@media screen and (max-width: 1172px) 
+/************************************contact us*********************************/
+.tsk2
 {
-    .container {
-        width: calc(750px - 300px);
-  
+    position: fixed;
+    left:calc(100% - 110px);
+    top:100px;
 }
-.icon
+.tsk2 i:hover
 {
-    display: grid;
-grid-gap: 10px;
-}
-
-.icon i 
-{
-    font-size: large;
+    font-size: xx-large;
 }
 
-}*//*
-@media screen and (max-width: 768px) 
-{
-    .container {
-        width: calc(750px - 300px);
-  
-}
-.icon
-{
-    display: grid;
-grid-gap: 10px;
-}
-
-.icon i 
-{
-    font-size: large;
-}
-
-}
-
-.middle 
-{
-    height: 110%;
-}
-
-}*/
-/* @media screen and (max-width: 1000px) 
-{
-.container
-{
-    width: 900px;
-}
-.middle 
-{
-    height: 90%;
-}
-
-}*/
-
-
-/*@media screen and (max-width: 768px) 
-{
-    .container {
-        width: calc(750px - 200px);
-      }
-
-.container .topic p
-{
-   display: none;
-}
-
-.specail
-{
-    display: block;
-}
-
-.specail .lis i 
-{
-    font-size: medium;
-    position:relative;
-    
-}
-li , ul
-{
-    
-padding: 0px;
-margin: 0px;
-}
-}*/
+/***************************end contact us**************************************/
